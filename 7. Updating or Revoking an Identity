@@ -1,0 +1,18 @@
+7. Updating or Revoking an Identity
+
+Users may want to update metadata or deactivate their identity.
+
+(define-public (deactivate-identity)
+  (begin
+    (asserts! (is-some (map-get? identities tx-sender)) (err u101))
+    (let ((identity (unwrap! (map-get? identities tx-sender) (err u102))))
+      (map-set identities tx-sender
+        (merge identity { active: false })
+      )
+    )
+    (ok true)
+  )
+)
+
+
+This preserves history while preventing misuse.
