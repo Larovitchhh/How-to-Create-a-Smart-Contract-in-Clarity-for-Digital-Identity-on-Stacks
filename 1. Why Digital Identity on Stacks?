@@ -1,0 +1,21 @@
+
+
+Traditional digital identities are:
+
+Centralized
+
+Prone to data breaches
+
+Hard to verify across platforms
+
+A blockchain-based identity on Stacks offers:
+
+Self-sovereign ownership (user controls their identity)
+
+Immutability (secured by Bitcoin finality)
+
+Interoperability with wallets and dApps
+
+Auditability without revealing private data
+
+Stacks is especially well suited because Clarity is decidable and interpretable, meaning you always know exactly what a contract will do before execution.
