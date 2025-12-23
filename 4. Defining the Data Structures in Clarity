@@ -1,0 +1,22 @@
+4. Defining the Data Structures in Clarity
+
+We use a map to store identities indexed by user principal.
+
+(define-map identities
+  principal
+  {
+    username: (string-ascii 32),
+    uri: (string-utf8 256),
+    created-at: uint,
+    active: bool
+  }
+)
+
+
+Why this structure?
+
+principal ensures one identity per wallet
+
+uri points to verifiable off-chain data
+
+active allows revocation without deletion
