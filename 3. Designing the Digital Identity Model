@@ -1,0 +1,21 @@
+3. Designing the Digital Identity Model
+
+Before coding, define what an identity is.
+
+A simple digital identity can include:
+
+Owner (principal)
+
+Username or handle
+
+Metadata URI (IPFS / HTTPS)
+
+Timestamp of creation
+
+Active / revoked status
+
+On-chain vs off-chain data
+
+On-chain: ownership, pointers, verification
+
+Off-chain: photos, documents, large JSON files
