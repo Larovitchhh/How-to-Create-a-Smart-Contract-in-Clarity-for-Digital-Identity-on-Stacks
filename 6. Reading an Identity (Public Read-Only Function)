@@ -1,0 +1,16 @@
+6. Reading an Identity (Public Read-Only Function)
+
+Read-only functions allow dApps to fetch identity data safely.
+
+(define-read-only (get-identity (user principal))
+  (map-get? identities user)
+)
+
+
+This function:
+
+Costs no gas
+
+Is safe for frontends and indexers
+
+Enables profile pages and reputation systems
