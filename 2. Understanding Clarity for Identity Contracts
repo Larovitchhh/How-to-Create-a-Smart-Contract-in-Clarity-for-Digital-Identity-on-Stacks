@@ -1,0 +1,11 @@
+
+
+Clarity is different from Solidity or Rust-based smart contract languages:
+
+Feature	Clarity
+Execution model	Interpreted (not compiled)
+Security	No re-entrancy, no hidden state
+Transparency	Full contract logic visible
+Suitability for identity	⭐⭐⭐⭐⭐
+
+For identity systems, predictability and transparency are critical—making Clarity an excellent choice.
