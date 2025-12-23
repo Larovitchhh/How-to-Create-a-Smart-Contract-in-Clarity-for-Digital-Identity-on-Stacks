@@ -1,0 +1,25 @@
+5. Creating the Identity (Register Function)
+
+This function lets a user create their identity.
+
+(define-public (register-identity (username (string-ascii 32)) (uri (string-utf8 256)))
+  (begin
+    (asserts! (is-none (map-get? identities tx-sender)) (err u100))
+    (map-set identities tx-sender {
+      username: username,
+      uri: uri,
+      created-at: block-height,
+      active: true
+    })
+    (ok true)
+  )
+)
+
+
+Key security checks:
+
+Prevents duplicate identities
+
+Identity is always tied to tx-sender
+
+No admin or backdoor control
