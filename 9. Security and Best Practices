@@ -1,0 +1,15 @@
+9. Security and Best Practices
+
+For production-ready identity contracts:
+
+Avoid admin-only controls
+
+Never store sensitive personal data on-chain
+
+Use IPFS or trusted HTTPS endpoints
+
+Add versioning for future upgrades
+
+Document error codes clearly
+
+Clarity’s design already removes many common attack vectors, but identity contracts must be especially conservative.
