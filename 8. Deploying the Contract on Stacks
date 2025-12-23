@@ -1,0 +1,19 @@
+8. Deploying the Contract on Stacks
+
+You can deploy using:
+
+Hiro Explorer (Sandbox)
+
+Clarinet (local testing)
+
+Programmatic deployment via SDKs
+
+Deployment steps:
+
+Test locally (Clarinet)
+
+Deploy to testnet
+
+Verify contract on explorer
+
+Integrate with frontend or wallet
